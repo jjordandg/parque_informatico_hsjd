@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="card" style="width: 18rem;">
+    <div class="card-header">
+      Edificio Central
+    </div>
+    <ul class="list-group list-group-flush">
+      <a class="button-card" href="{{ url_for('ec_subsuelo')}}"><li class="list-group-item">Subsuelo</li></a>
+      <li class="list-group-item">Primer Piso</li>
+      <li class="list-group-item">Segundo Piso</li>
+      <li class="list-group-item">Tercer Piso</li>
+      <li class="list-group-item">Cuarto Piso</li>
+      <li class="list-group-item">Quinto Piso</li>
+    </ul>
+  </div>
+{% endblock %}
