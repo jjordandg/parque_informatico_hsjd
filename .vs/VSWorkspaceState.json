@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\static\\css",
+    "\\templates",
+    "\\templates\\edificios",
+    "\\templates\\edificios\\subsuelo",
+    "\\templates\\equipo"
   ],
-  "SelectedNode": "\\parque_informatico_hsjd",
+  "SelectedNode": "\\templates",
   "PreviewInSolutionExplorer": false
 }

@@ -13,3 +13,17 @@
     outline: inherit;
     text-decoration: none;
   }
+
+  .item-lista-titulo{
+      background: #1b3582;
+      color: white;
+  }
+
+  .item-lista{
+      background: white;
+  }
+
+  .item-lista:hover{
+      background: #1b3582;
+      color: white;
+  }

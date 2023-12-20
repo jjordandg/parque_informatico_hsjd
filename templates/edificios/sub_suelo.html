@@ -1,14 +1,20 @@
 {% extends "layout.html" %}
 
 {% block content %}
+
+<h1>Subsuelo</h1>
 <div class="card" style="width: 18rem;">
-    <div class="card-header">
-      Subsuelo
+    <div class="card-header item-lista-titulo">
+      Listado de sectores
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">An item</li>
-      <li class="list-group-item">A second item</li>
-      <li class="list-group-item">A third item</li>
+      <a class="button-card" href="{{ url_for('sistemas')}}"><li class="list-group-item item-lista">Sistemas</li></a>
+      <a class="button-card" href="{{ url_for('honorarios')}}"><li class="list-group-item item-lista">Honorarios</li></a>
+      <a class="button-card" href="{{ url_for('doc_investigacion')}}"><li class="list-group-item item-lista">Docencia e Investigacion</li></a>
+      <a class="button-card" href="{{ url_for('atp')}}"><li class="list-group-item item-lista">Oficina APT</li></a>
+      <a class="button-card" href="{{ url_for('marketing')}}"><li class="list-group-item item-lista">Marketing</li></a>
+      <a class="button-card" href="{{ url_for('rel_publicas')}}"><li class="list-group-item item-lista">Relaciones Publicas</li></a>
+      <a class="button-card" href="{{ url_for('salon_actos')}}"><li class="list-group-item item-lista">Salon de Actos</li></a>
     </ul>
-</div>
+  </div>
 {% endblock %}

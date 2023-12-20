@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>Subsuelo</h1>
+<div class="card" style="width: 18rem;">
+    <div class="card-header item-lista-titulo">
+      Listado de sectores
+    </div>
+    <ul class="list-group list-group-flush">
+      <a class="button-card" href="{{ url_for('ec_subsuelo')}}"><li class="list-group-item item-lista">Sistemas</li></a>
+      <a class="button-card" href="{{ url_for('ec_planta_baja')}}"><li class="list-group-item item-lista">Honorarios</li></a>
+      <a class="button-card" href="{{ url_for('ec_primer_piso')}}"><li class="list-group-item item-lista">Docencia e Investigacion</li></a>
+      <a class="button-card" href="{{ url_for('ec_segundo_piso')}}"><li class="list-group-item item-lista">Oficina APT</li></a>
+      <a class="button-card" href="{{ url_for('ec_tercer_piso')}}"><li class="list-group-item item-lista">Marketing</li></a>
+      <a class="button-card" href="{{ url_for('ec_cuarto_piso')}}"><li class="list-group-item item-lista">Relaciones Publicas</li></a>
+      <a class="button-card" href="{{ url_for('ec_quinto_piso')}}"><li class="list-group-item item-lista">Salon de Actos</li></a>
+    </ul>
+  </div>
+{% endblock %}

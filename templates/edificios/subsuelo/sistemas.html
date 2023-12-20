@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>Sistemas</h1>
+<div class="card" style="width: 18rem;">
+    <div class="card-header item-lista-titulo">
+      Listado de Computadoras
+    </div>
+    <ul class="list-group list-group-flush">
+      <a class="button-card" href="{{ url_for('computadora_informacion')}}"><li class="list-group-item item-lista">Jordan Godoy</li></a>
+      <a class="button-card" href="{{ url_for('computadora_informacion')}}"><li class="list-group-item item-lista">Gabriel Arriaza</li></a>
+      <a class="button-card" href="{{ url_for('computadora_informacion')}}"><li class="list-group-item item-lista">Leandro Sanchez</li></a>
+      <a class="button-card" href="{{ url_for('computadora_informacion')}}"><li class="list-group-item item-lista">Leonardo Da Encarnacao</li></a>
+      <a class="button-card" href="{{ url_for('computadora_informacion')}}"><li class="list-group-item item-lista">Maria Jose Pereyra</li></a>
+      <a class="button-card" href="{{ url_for('computadora_informacion')}}"><li class="list-group-item item-lista">Daniel Perez</li></a>
+      <a class="button-card" href="{{ url_for('computadora_informacion')}}"><li class="list-group-item item-lista">Santiago Cardozo</li></a>
+      <a class="button-card" href="{{ url_for('computadora_informacion')}}"><li class="list-group-item item-lista">Diego Aredes</li></a>
+      <a class="button-card" href="{{ url_for('computadora_informacion')}}"><li class="list-group-item item-lista">Pedro Roemro</li></a>
+    </ul>
+  </div>
+
+  <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+  </ul>
+</nav>
+{% endblock %}
