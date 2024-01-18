@@ -27,7 +27,7 @@ def equipos_por_sector(edificio, sector):
 #     equipos = obtenerEquipos(edificio, piso, sector, id_equipo)
 #     return render_template('/computadora_informacion.html', equipos=equipos)
 
-#Ruta que trae el equipo por ID evaluando el edificio y sector 
+# Ruta que trae el equipo por ID evaluando el edificio y sector 
 @app.route('/computadora_informacion.html')
 def computadora_informacion(edificio, sector, id):
     equipo = obtenerEquipo(edificio, sector, id)

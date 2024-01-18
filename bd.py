@@ -6,7 +6,7 @@ def crearConexion():
             host='localhost',
             user='root',
             password='Contratiemp0$',
-            db='bd_hsjd'
+            db='db_hsjd'
         )
         return conexion
 

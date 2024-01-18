@@ -15,7 +15,7 @@ def obtenerSectores(edificio):
     conexion = crearConexion()
     sectores = []
     with conexion.cursor() as cursor:
-        query = "SELECT SECTOR, SECTORKEY FROM bd_hsjd.equipos_hsjd WHERE BUILDINGKEY = %s"
+        query = "SELECT SECTOR, SECTORKEY FROM db_hsjd.equipos_hsjd WHERE BUILDINGKEY = %s"
         cursor.execute(query, (edificio))
         sectores = cursor.fetchall()
     conexion.close()
@@ -25,7 +25,7 @@ def obtenerEquiposSector(edificio, sector):
     conexion = crearConexion()
     equipos = []
     with conexion.cursor() as cursor:
-        query = "SELECT ID, IP, HOSTNAME FROM bd_hsjd.equipos_hsjd WHERE BUILDINGKEY = %s && SECTORKEY = %s"
+        query = "SELECT ID, IP, HOSTNAME FROM db_hsjd.equipos_hsjd WHERE BUILDINGKEY = %s && SECTORKEY = %s"
         cursor.execute(query, (edificio, sector))
         equipos = cursor.fetchall()
     conexion.close()
@@ -35,7 +35,7 @@ def obtenerEquiposSector(edificio, sector):
 #     conexion = crearConexion()
 #     equipos = []
 #     with conexion.cursor() as cursor:
-#         query = "SELECT ID, IP, HOSTNAME FROM bd_hsjd.equipos_hsjd WHERE BUILDING-KEY = %s && FLOOR-KEY = %s"
+#         query = "SELECT ID, IP, HOSTNAME FROM db_hsjd.equipos_hsjd WHERE BUILDING-KEY = %s && FLOOR-KEY = %s"
 #         cursor.execute(query, (edificio), (sector))
 #         equipos = cursor.fetchall()
 #     conexion.close()
