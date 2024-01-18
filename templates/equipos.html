@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block titulo %}  {% endblock %}
+{% block content %}
+
+<h1> Equipos </h1>
+<div class="card" style="width: 18rem;">
+    <div class="card-header item-lista-titulo">
+      Listado de equipos
+    </div>
+    <ul class="list-group list-group-flush">
+
+      
+      {% set processed_values = [] %}
+
+      {% for equipo in equipos %}
+          {% if sector[0] not in processed_values %}
+              <a class="button-card" href="computadora_informacion.html">
+                  <li class="list-group-item item-lista"> {{ equipo[0] equipo[1] equipo[2] }}</li>
+              </a>
+              {% set _ = processed_values.append(equipo[0]) %}
+          {% endif %}
+      {% endfor %}      
+
+    </ul>
+  </div>
+
+{% endblock %}

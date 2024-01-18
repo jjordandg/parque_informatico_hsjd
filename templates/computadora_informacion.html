@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block titulo %} Equipo {% endblock %}
+{% block content %}
+
+<div>
+
+	<h1>Equipo informatico</h1>
+
+	<h2>Ubicacion:</h2>
+	<ul>
+		<li>Centro: {{ equipo[1] }}</li>
+		<li>Edificio: {{ equipo[2] }}</li>
+		<li>Piso: {{ equipo[3] }}</li>
+		<li>Sector: {{ equipo[4] }}</li>
+	</ul>
+
+	<h2>Identificacion: </h2>
+	<ul>
+		<li>ID: {{ equipo[0] }}</li>
+		<li>IP: {{ equipo[5] }}</li>
+		<li>VLAN: {{ equipo[6] }}</li>
+		<li>Hostname: {{ equipo[7] }}</li>
+		<li>Interno: {{ equipo[18] }}</li>
+	</ul>
+
+	<h2>Hardware:</h2>
+	<ul>
+		<li>Procesador: {{ equipo[8] }}</li>
+		<li>Memoria RAM: {{ equipo[9] }}</li>
+		<li>Placa madre: {{ equipo[11] }}</li>
+		<li>Perifericos: {{ equipo[12] }}</li>
+		<li>Capacidad de almacenamiento: {{ equipo[13] }} {{ equipo[14] }}</li>
+		<li>Monitor: {{ equipo[15] }} {{ equipo[16] }} {{ equipo[17] }}</li>
+	</ul>
+
+	<h2>Informacion Extra:</h2>
+	<ul>
+		<li>Sistema Operativo: {{ equipo[10] }}</li>
+		<li>Software Installado: <p>{{ equipo[19] }}</p></li>
+		<li>Comentarios<p>{{ equipo[20] }}</p></li>
+	</ul>
+
+</div>
+
+{% endblock %}

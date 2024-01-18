@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block titulo %}  {% endblock %}
+{% block content %}
+
+<h1> Sector </h1>
+<div class="card" style="width: 18rem;">
+    <div class="card-header item-lista-titulo">
+      Listado de sectores
+    </div>
+    <ul class="list-group list-group-flush">
+      
+      {% set processed_values = [] %}
+
+      {% for sector in sectores %}
+          {% if sector[0] not in processed_values %}
+              <a class="button-card" href="subsuelo/{{ sector[1] }}"> <!-- tengo que conseguir que 'subsuelo' se cargue desde la db -->
+                  <li class="list-group-item item-lista"> {{ sector[0] }}</li>
+              </a>
+              {% set _ = processed_values.append(sector[0]) %}
+          {% endif %}
+      {% endfor %}      
+
+    </ul>
+  </div>
+
+{% endblock %}
